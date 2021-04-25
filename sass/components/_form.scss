@@ -1,0 +1,113 @@
+.form__field:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  margin-top: 4px;
+  padding-left: 42px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border var(--animation), outline var(--animation),
+    color var(--animation);
+}
+
+.form__label {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+.form__comment {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    font-family: var(--text-general);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:not(:placeholder-shown) {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+}
+.agreement__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.agreement__link {
+  display: flex;
+  margin-left: 3px;
+}
+.agreement__link--blue {
+  color: var(--accent-color);
+}
+
+.form__icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  transition: fill var(--animation);
+}
+.form__label {
+  position: relative;
+  font-family: inherit;
+}
+
+.form__field:focus-within .form__input {
+  border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
+}
+.form__field:focus-within .form__icon {
+  fill: var(--accent-color);
+}
+.agreement__checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.agreement__checkbox:checked + .agreement__icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+/* .checkbox-icon:focus {
+  border: 2px solid var(--title-color);
+} */
+.agreement__icon {
+  display: flex;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  transition: background-color var(--animation),
+    background-image var(--animation);
+}

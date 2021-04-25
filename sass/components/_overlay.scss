@@ -1,0 +1,26 @@
+.projects__thumb {
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--animation);
+}
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform var(--animation);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.projects__text {
+  margin-bottom: 0;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--dark-bg-text-color);
+}
+.item_grid:hover .projects__overlay {
+  transform: translateY(0);
+}

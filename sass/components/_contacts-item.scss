@@ -1,0 +1,15 @@
+.contacts_item__mail,
+.contacts_item__tel {
+  display: flex;
+  align-items: center;
+}
+.contacts_item__icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.contacts_item__tel .contacts_item__icon {
+  width: 10px;
+  height: 16px;
+}

@@ -1,0 +1,74 @@
+.projects__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+
+.portfolio.section .list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.portfolio.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio.section .filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.button__portfolio {
+  border-width: 0px;
+  display: inline-block;
+  min-width: 73px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  background-color: var(--buttom-bg-color);
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &:hover,
+  &:focus {
+    @extend %colorLight;
+  }
+}
+.filter.list {
+  margin-bottom: 50px;
+}
+.list.projects p {
+  margin-bottom: 0px;
+}
+.list.projects.grid .item_grid {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  transition: box-shadow var(--animation);
+}
+.projects__name {
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  transition: color var(--animation);
+}
+.projects--hover .item_grid:hover,
+.projects--hover .item_grid:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.social-connect__icons {
+  justify-content: flex-start;
+  fill: var(--dark-bg-text-color);
+}

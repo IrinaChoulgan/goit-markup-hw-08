@@ -1,0 +1,18 @@
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-color);
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: color, var(--animation);
+
+  &,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
