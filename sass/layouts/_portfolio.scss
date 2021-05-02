@@ -9,12 +9,26 @@
 
 .portfolio.section .list {
   display: flex;
-  justify-content: center;
   list-style: none;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 769px) {
+    justify-content: center;
+  }
+}
+.filter.list {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .portfolio.section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199.99px) {
+    padding-top: 60px;
+  }
 }
 .portfolio.section .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -40,6 +54,10 @@
   &:focus {
     @extend %colorLight;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .filter.list {
   margin-bottom: 50px;
@@ -48,15 +66,27 @@
   margin-bottom: 0px;
 }
 .list.projects.grid .item_grid {
-  flex-basis: calc((100% - 30px * 3) / 3);
+  // border-right: 1px solid var(--border-portfolio);
+  // border-bottom: 1px solid var(--border-portfolio);
+  // border-left: 1px solid var(--border-portfolio);
+  flex-basis: calc((100% - 30px * 1) / 1);
   margin-left: 30px;
   margin-top: 30px;
   transition: box-shadow var(--animation);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
-.projects__name {
+.item_grid--border {
   border-right: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-left: 1px solid var(--border-portfolio);
+}
+.projects__name {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;

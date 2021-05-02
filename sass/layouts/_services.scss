@@ -1,6 +1,11 @@
 .services {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199.99px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .services__title {
   font-weight: 700;

@@ -33,18 +33,39 @@
   text-transform: uppercase;
   color: var(--dark-bg-text-color);
 }
+.social-connect {
+  @media screen and (min-width: 780px) {
+    margin-left: 70px;
+  }
+}
 .footer__container {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+}
+.footer__information {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .footer.social-connect {
   padding-top: 12px;
 }
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
-
 .subscribe__mail {
   display: inline-block;
   height: 50px;
@@ -54,6 +75,18 @@
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  @media screen and (max-width: 1199.98px) {
+    width: 450px;
+  }
 }
 ::-webkit-input-placeholder {
   font-size: 16px;
@@ -92,6 +125,11 @@
   &:hover {
     background-color: var(--button-background-color);
   }
+
+  @media screen and (min-width: 480px) {
+    display: inline-flex;
+    margin-top: 20px;
+  }
 }
 .subscribe__icon {
   margin-left: 10px;
@@ -103,5 +141,37 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+  }
+}
+
+.footer__adaptive {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.subscribe {
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+.subscribe__form {
+  @media screen and (max-width: 1199.99px) {
+    flex-flow: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }

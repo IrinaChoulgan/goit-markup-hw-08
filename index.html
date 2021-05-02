@@ -52,7 +52,48 @@
           </li>
         </ul>
       </div>
+      <button class="mobile-menu-btn mobile-menu__link" data-menu-button>
+        <svg class="mobile-menu-icon">
+          <use class="mobile__menu-icon" href="./images/icons.svg#menu-adaptive"></use>
+          <use class="mobile__close-icon" href="./images/icons.svg#close-adaptive"></use>
+        </svg>
+      </button>
     </header>
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__list list">
+            <li class="item site-nav__item mobile-menu_item"><a class="link item current__mobile" href="">Студия</a></li>
+            <li class="item site-nav__item mobile-menu_item">
+              <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item site-nav__item mobile-menu_item"><a class="link site-nav__link" href="">Контакты</a></li>
+          </ul>
+          <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item item">
+            <a class="link contacts_item__tel mobile-contacts__tel" href="tel:+380961111111">
+              <svg class="contacts_item__icon">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item item">
+            <a class="link contacts_item__mail mobile-contacts__mail" href="mailto:info@devstudio.com"
+              >
+              <svg class="contacts_item__icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-social">
+          <a class="mobile-social__instagram mobile-social--color" href="">Instagram</a>
+          <a class="mobile-social__twitter mobile-social--color" href="">Twitter</a>
+          <a class="mobile-social__facebook mobile-social--color" href="">Facebook</a>
+          <a class="mobile-social__linkedin mobile-social--color" href="">LinkedIn</a>
+        </div>
+
+
+    </div>
 
     <main>
       <!-- Секция герой -->
@@ -69,7 +110,7 @@
             </div>
           </div>
         </section>
-    
+     
 
       <!-- Секция преимуществ -->
 
@@ -118,27 +159,39 @@
           <h2 class="services__title">Чем мы занимаемся</h2>
           <ul class="services__list grid list">
             <li class="grid-item services__item" >
-              <img
+              <picture>
+                <source srcset="./images/box/box1.jpg 1x, ./images/box/box1@2x.jpg 2x" media="(min-width: 1200px)"> 
+               <img
                 src="./images/img-5.jpg"
                 alt="Печатает на клавиатуре"
                 width="370"
               />
+              </picture>
+              
               <p class="grid-item__desc" >Десктопные приложения</p>
             </li>
             <li class="grid-item services__item">
-              <img
+              <picture>
+                <source srcset="./images/box/box2.jpg 1x, ./images/box/box2@2x.jpg 2x" media="(min-width: 1200px)"> 
+               <img
                 src="./images/img-2-2.jpg"
                 alt="Телефон в руке"
                 width="370"
               />
+              </picture>
+              
               <p class="grid-item__desc">Мобильные приложения</p>
             </li>
             <li class="grid-item services__item">
-              <img
+              <picture>
+                <source srcset="./images/box/box3.jpg 1x, ./images/box/box3@2x.jpg 2x" media="(min-width: 1200px)"> 
+               <img
                 src="./images/img-3-2.jpg"
                 alt="Планшет в руке"
                 width="370"
               />
+              </picture>
+              
               <p class="grid-item__desc">Дизайнерские решения</p>
             </li>
           </ul>
@@ -152,11 +205,19 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list grid team__list">
             <li class="grid-item team__item" >
-              <img
+              <picture>
+                <source srcset="./images/team/desktop/i.d.desktop.jpg 1x, ./images/team/desktop/i.d.desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team/tablet/i.d.tablet.jpg 1x, ./images/team/tablet/i.d.tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team/mobile/i.d.mobile.jpg 1x, ./images/team/mobile/i.d.mobile@2x.jpg 2x" media="(max-width: 767px)">
+                
+               <img
                 src="./images/img.jpg"
                 alt="Мужчина в очках улыбается"
-                width="270"
-              />
+                width="450"
+              /> 
+              </picture>
+              
+
               <div class="team__info">
               <p class="team__name">Игорь Демьяненко</p>
               <p class="team__profession">Product Designer</p>
@@ -182,11 +243,18 @@
               </ul>
             </li>
             <li class="grid-item team__item">
-              <img
+              <picture>
+                <source srcset="./images/team/desktop/o.r.desktop.jpg 1x, ./images/team/desktop/o.r.desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team/tablet/o.r.tablet.jpg 1x, ./images/team/tablet/o.r.tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team/mobile/o.r.mobile.jpg 1x, ./images/team/mobile/o.r.mobile@2x.jpg 2x" media="(max-width: 767px)">
+                
+               <img
                 src="./images/img-2.jpg"
                 alt="Девушка, блондинка в очках"
-                width="270"
+                width="450"
               />
+              </picture>
+              
               <div class="team__info">
               <p class="team__name">Ольга Репина</p>
               <p class="team__profession">Frontend Developer</p>
@@ -212,11 +280,18 @@
               </ul>
             </li>
             <li class="grid-item team__item">
-              <img
+               <picture>
+                <source srcset="./images/team/desktop/n.t.desktop.jpg 1x, ./images/team/desktop/n.t.desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team/tablet/n.t.tablet.jpg 1x, ./images/team/tablet/n.t.tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team/mobile/n.t.mobile.jpg 1x, ./images/team/mobile/n.t.mobile@2x.jpg 2x" media="(max-width: 767px)">
+                
+               <img
                 src="./images/img-3.jpg"
                 alt="Мужчина улыбается"
-                width="270"
+                width="450"
               />
+              </picture>
+              
               <div class="team__info">
               <p class="team__name">Николай Тарасов</p>
               <p class="team__profession">Marketing</p>
@@ -242,7 +317,14 @@
               </ul>
             </li>
             <li class="grid-item team__item">
-              <img src="./images/img-4.jpg" alt="Мужчина в очках" width="270" />
+              <picture>
+                <source srcset="./images/team/desktop/m.e.desktop.jpg 1x, ./images/team/desktop/m.e.desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team/tablet/m.e.tablet.jpg 1x, ./images/team/tablet/m.e.tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team/mobile/m.e.mobile.jpg 1x, ./images/team/mobile/m.e.mobile@2x.jpg 2x" media="(max-width: 767px)">
+                
+               <img src="./images/img-4.jpg" alt="Мужчина в очках" width="450" />
+              </picture>
+              
               <div class="team__info">
               <p class="team__name">Михаил Ермаков</p>
               <p class="team__profession">UI Designer</p>
@@ -273,7 +355,7 @@
       <section class="clients" >
         <div class="container">
         <h2 class="clients__title">Постоянные клиенты</h2>
-          <ul class="list grid" >
+          <ul class="list grid clients--flex" >
             <li class="grid-item clients-icons-item">
              <a href=""class="clients-icons-link" target="_blank" rel="noopener noreferrer">
                   <svg class="icon" width="44" height="49">
@@ -326,6 +408,7 @@
 
     <footer class="footer footer--dark-bg">
       <div class="container footer__container">
+        <div class="footer__adaptive">
         <div class="footer__information" >
         <a class="link footer__logo" href="./index.html"
           ><span class="logo__color">Web</span><span class="logo__origin logo--dark-bg">Studio</span>
@@ -376,6 +459,7 @@
                        <use href="./images/icons.svg#icon-linkedin"></use>
                      </svg></a></li>
               </ul>
+          </div>
           </div>
         <div class="subscribe">
           <p class="subscribe__title social-connect__title">Подпишитесь на рассылку</p>
@@ -452,6 +536,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js" ></script>
   </body>
 </html>
   
