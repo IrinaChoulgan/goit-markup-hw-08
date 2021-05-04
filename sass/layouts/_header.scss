@@ -82,12 +82,10 @@
 .header__container,
 .header__nav {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    margin-left: 0px;
+    margin-left: auto;
   }
 }
 .nav {

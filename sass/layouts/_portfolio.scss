@@ -54,21 +54,34 @@
   &:focus {
     @extend %colorLight;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
+.button__portfolio:nth-child(n + 4) {
+  padding-bottom: 0;
+}
+
 .filter.list {
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767.99px) {
+    margin-bottom: 40px;
+  }
+}
+
+.button.filter_button {
+  @media screen and (max-width: 767.99px) {
+    padding-bottom: 15px;
+  }
 }
 .list.projects p {
   margin-bottom: 0px;
 }
 .list.projects.grid .item_grid {
-  // border-right: 1px solid var(--border-portfolio);
-  // border-bottom: 1px solid var(--border-portfolio);
-  // border-left: 1px solid var(--border-portfolio);
   flex-basis: calc((100% - 30px * 1) / 1);
   margin-left: 30px;
   margin-top: 30px;

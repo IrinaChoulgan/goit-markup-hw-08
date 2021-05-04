@@ -200,14 +200,24 @@ address {
 
 .modal {
   position: absolute;
+  display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 528px;
-  min-height: 581px;
   background: var(--dark-bg-text-color);
   transition: transform var(--animation);
   padding: 40px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1199.99px) {
+  .modal {
+    min-width: 450px;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__close {
@@ -326,7 +336,6 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -600,6 +609,11 @@ address {
   margin-left: 10px;
 }
 
+.mobile-menu--position {
+  position: absolute;
+  bottom: 48px;
+}
+
 .header,
 .contacts {
   font-size: 14px;
@@ -699,15 +713,13 @@ address {
 .header__container,
 .header__nav {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .header__container,
   .header__nav {
-    margin-left: 0px;
+    margin-left: auto;
   }
 }
 
@@ -826,6 +838,12 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__title {
+    text-align: center;
+  }
 }
 
 .advantages {
@@ -1134,8 +1152,10 @@ address {
   }
 }
 
-.footer__container {
-  text-align: center;
+@media screen and (max-width: 1199.99px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1371,8 +1391,24 @@ address {
   }
 }
 
+.button__portfolio:nth-child(n + 4) {
+  padding-bottom: 0;
+}
+
 .filter.list {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767.99px) {
+  .filter.list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .button.filter_button {
+    padding-bottom: 15px;
+  }
 }
 
 .list.projects p {

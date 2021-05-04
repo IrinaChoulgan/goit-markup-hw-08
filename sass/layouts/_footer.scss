@@ -39,8 +39,9 @@
   }
 }
 .footer__container {
-  text-align: center;
-  @media screen and (min-width: 768px) {
+  // text-align: center;
+  @media screen and (max-width: 1199.99px) {
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

@@ -14,14 +14,24 @@
 }
 .modal {
   position: absolute;
+  display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 528px;
-  min-height: 581px;
+  // min-height: 581px;
   background: var(--dark-bg-text-color);
   transition: transform var(--animation);
   padding: 40px;
+  border-radius: 4px;
+
+  @media screen and (max-width: 1199.99px) {
+    min-width: 450px;
+
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__close {
